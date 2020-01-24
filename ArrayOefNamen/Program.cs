@@ -34,15 +34,23 @@ namespace ArrayOefNamen
             // VRAAG    3 namen aan de gebruiker
             for (int i = 0; i < 3 ; i++)
             {
+                // BEREKEN  ALS     gebruiker naam ingeeft
                 Console.WriteLine("geef een naam");
-                namen = Console.ReadLine();
+                namen[i] =  Console.ReadLine();
             }
-            // BEREKEN  ALS     gebruiker naam ingeeft
             //          DAN     sorter op volgorde 
             //          ALS     de namen zijn gesorteerd
-            //          DAN     de namen in hoofdletter
-                      
-            // TOON      de namen in volgorde
+            Array.Sort(namen);
+            foreach (string item in namen)
+            {
+                //          DAN     de namen in hoofdletter
+                // TOON      de namen in volgorde
+                Console.WriteLine(item.ToUpper());
+            }
+            //wachten 
+            Console.WriteLine();
+            Console.WriteLine("druk op enter om af te sluiten");
+            Console.ReadKey();
         }
     }
 }
