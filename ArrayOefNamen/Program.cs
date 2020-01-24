@@ -28,6 +28,21 @@ namespace ArrayOefNamen
     {
         static void Main(string[] args)
         {
+            //declaraties
+            string[] namen = new string[3];
+
+            // VRAAG    3 namen aan de gebruiker
+            for (int i = 0; i < 3 ; i++)
+            {
+                Console.WriteLine("geef een naam");
+                namen = Console.ReadLine();
+            }
+            // BEREKEN  ALS     gebruiker naam ingeeft
+            //          DAN     sorter op volgorde 
+            //          ALS     de namen zijn gesorteerd
+            //          DAN     de namen in hoofdletter
+                      
+            // TOON      de namen in volgorde
         }
     }
 }
