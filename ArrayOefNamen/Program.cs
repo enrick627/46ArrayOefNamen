@@ -1,4 +1,20 @@
-﻿//
+﻿//Enrick De Munter 5ITN nr3 24/01/2020
+/* OPGAVE
+ * ======
+ * 3 namen (user input) gesorteerd en in hoofdletters
+ * ANALYSE  
+ * ======
+ * VRAAG    3 namen aan de gebruiker
+ *  
+ * BEREKEN  ALS     gebruiker naam ingeeft
+ *          DAN     sorter op volgorde 
+ *          ALS     de namen zijn gesorteerd
+ *          DAN     de namen in hoofdletter
+ *          
+ * TOON      de namen in volgorde
+ * 
+ * 
+ */
 
 using System;
 using System.Collections.Generic;
