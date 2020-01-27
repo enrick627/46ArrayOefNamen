@@ -29,14 +29,15 @@ namespace ArrayOefNamen
         static void Main(string[] args)
         {
             //declaraties
+            string NamenUpgrade, NamenUpgrades;
             string[] namen = new string[3];
 
             // VRAAG    3 namen aan de gebruiker
-            for (int i = 0; i < 3 ; i++)
+            for (int i = 0; i < 3; i++)
             {
                 // BEREKEN  ALS     gebruiker naam ingeeft
                 Console.WriteLine("geef een naam");
-                namen[i] =  Console.ReadLine();
+                namen[i] = Console.ReadLine();
             }
             //          DAN     sorter op volgorde 
             //          ALS     de namen zijn gesorteerd
@@ -45,7 +46,12 @@ namespace ArrayOefNamen
             {
                 //          DAN     de namen in hoofdletter
                 // TOON      de namen in volgorde
-                Console.WriteLine(item.ToUpper());
+
+                NamenUpgrade = item;
+                NamenUpgrade = item.Substring(0, 1);
+                NamenUpgrades = item.Substring();
+                Console.WriteLine($"{NamenUpgrade.ToUpper()}.{NamenUpgrades.ToUpper()}");
+
             }
             //wachten 
             Console.WriteLine();
